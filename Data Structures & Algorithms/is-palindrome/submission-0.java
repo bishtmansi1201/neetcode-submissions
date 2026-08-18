@@ -1,7 +1,9 @@
+//brute force
 class Solution {
     public boolean isPalindrome(String s) {
         StringBuilder newStr = new StringBuilder();
-        for (char c: s.toCharArray()){
+        for (int i=0; i<s.length();i++){
+            char c= s.charAt(i);
             if (Character.isLetterOrDigit(c)){
                 newStr.append(Character.toLowerCase(c));
             }
